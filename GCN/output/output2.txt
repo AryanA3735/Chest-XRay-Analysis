@@ -1,0 +1,1684 @@
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11070). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+{'train': 984, 'val': 1081}
+Epoch 0/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 27.3908 AUC: 0.4988  
+
+Atelectasis: 0.4989  
+Cardiomegaly: 0.4835  
+Effusion: 0.5111  
+Infiltration: 0.4831  
+Mass: 0.4939  
+Nodule: 0.5056  
+Pneumonia: 0.5001  
+Pneumothorax: 0.5142  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 14.8400 AUC: 0.4905  
+
+Atelectasis: 0.5528  
+Cardiomegaly: 0.5223  
+Effusion: 0.5061  
+Infiltration: 0.5079  
+Mass: 0.5371  
+Nodule: 0.5013  
+Pneumonia: 0.3900  
+Pneumothorax: 0.4064  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 1/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 24.5417 AUC: 0.5006  
+
+Atelectasis: 0.4940  
+Cardiomegaly: 0.5258  
+Effusion: 0.5082  
+Infiltration: 0.5257  
+Mass: 0.4320  
+Nodule: 0.5155  
+Pneumonia: 0.4906  
+Pneumothorax: 0.5132  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.8355 AUC: 0.5201  
+
+Atelectasis: 0.5152  
+Cardiomegaly: 0.5530  
+Effusion: 0.6048  
+Infiltration: 0.6154  
+Mass: 0.4962  
+Nodule: 0.4541  
+Pneumonia: 0.4535  
+Pneumothorax: 0.4687  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 2/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 23.6498 AUC: 0.5063  
+
+Atelectasis: 0.4915  
+Cardiomegaly: 0.5160  
+Effusion: 0.4872  
+Infiltration: 0.5370  
+Mass: 0.5101  
+Nodule: 0.4962  
+Pneumonia: 0.5237  
+Pneumothorax: 0.4888  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.9749 AUC: 0.5199  
+
+Atelectasis: 0.5277  
+Cardiomegaly: 0.5490  
+Effusion: 0.5767  
+Infiltration: 0.6139  
+Mass: 0.4559  
+Nodule: 0.4436  
+Pneumonia: 0.4755  
+Pneumothorax: 0.5170  
+
+
+
+Epoch 3/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 22.9003 AUC: 0.5194  
+
+Atelectasis: 0.5220  
+Cardiomegaly: 0.5389  
+Effusion: 0.5328  
+Infiltration: 0.5443  
+Mass: 0.4867  
+Nodule: 0.4821  
+Pneumonia: 0.5219  
+Pneumothorax: 0.5263  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.6746 AUC: 0.5234  
+
+Atelectasis: 0.5138  
+Cardiomegaly: 0.5495  
+Effusion: 0.6171  
+Infiltration: 0.6525  
+Mass: 0.4143  
+Nodule: 0.4707  
+Pneumonia: 0.4573  
+Pneumothorax: 0.5122  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 4/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 22.4450 AUC: 0.5413  
+
+Atelectasis: 0.5290  
+Cardiomegaly: 0.5526  
+Effusion: 0.5407  
+Infiltration: 0.5317  
+Mass: 0.5175  
+Nodule: 0.5364  
+Pneumonia: 0.5857  
+Pneumothorax: 0.5367  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.9461 AUC: 0.5351  
+
+Atelectasis: 0.5510  
+Cardiomegaly: 0.6028  
+Effusion: 0.6195  
+Infiltration: 0.6313  
+Mass: 0.3935  
+Nodule: 0.4596  
+Pneumonia: 0.4818  
+Pneumothorax: 0.5415  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 5/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 22.1089 AUC: 0.5293  
+
+Atelectasis: 0.5254  
+Cardiomegaly: 0.5996  
+Effusion: 0.5292  
+Infiltration: 0.5314  
+Mass: 0.4741  
+Nodule: 0.5269  
+Pneumonia: 0.4796  
+Pneumothorax: 0.5679  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 13.0561 AUC: 0.5485  
+
+Atelectasis: 0.5430  
+Cardiomegaly: 0.6450  
+Effusion: 0.6402  
+Infiltration: 0.6253  
+Mass: 0.4129  
+Nodule: 0.4648  
+Pneumonia: 0.4767  
+Pneumothorax: 0.5798  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 6/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 21.6405 AUC: 0.5543  
+
+Atelectasis: 0.5070  
+Cardiomegaly: 0.6028  
+Effusion: 0.5574  
+Infiltration: 0.6008  
+Mass: 0.5385  
+Nodule: 0.6042  
+Pneumonia: 0.4756  
+Pneumothorax: 0.5480  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.7523 AUC: 0.5533  
+
+Atelectasis: 0.5753  
+Cardiomegaly: 0.6920  
+Effusion: 0.6771  
+Infiltration: 0.6283  
+Mass: 0.3842  
+Nodule: 0.4397  
+Pneumonia: 0.4588  
+Pneumothorax: 0.5715  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 7/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 21.3180 AUC: 0.5862  
+
+Atelectasis: 0.5452  
+Cardiomegaly: 0.6412  
+Effusion: 0.6262  
+Infiltration: 0.6042  
+Mass: 0.5543  
+Nodule: 0.5823  
+Pneumonia: 0.5208  
+Pneumothorax: 0.6156  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 13.2875 AUC: 0.5784  
+
+Atelectasis: 0.6062  
+Cardiomegaly: 0.7817  
+Effusion: 0.6992  
+Infiltration: 0.6486  
+Mass: 0.3874  
+Nodule: 0.4498  
+Pneumonia: 0.4710  
+Pneumothorax: 0.5836  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 8/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 21.0151 AUC: 0.5836  
+
+Atelectasis: 0.5427  
+Cardiomegaly: 0.6776  
+Effusion: 0.6169  
+Infiltration: 0.5554  
+Mass: 0.5703  
+Nodule: 0.5853  
+Pneumonia: 0.5452  
+Pneumothorax: 0.5760  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 13.3479 AUC: 0.5943  
+
+Atelectasis: 0.6126  
+Cardiomegaly: 0.7620  
+Effusion: 0.7110  
+Infiltration: 0.6312  
+Mass: 0.4354  
+Nodule: 0.4680  
+Pneumonia: 0.5093  
+Pneumothorax: 0.6246  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 9/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 20.6767 AUC: 0.6113  
+
+Atelectasis: 0.5746  
+Cardiomegaly: 0.7152  
+Effusion: 0.6316  
+Infiltration: 0.6012  
+Mass: 0.5931  
+Nodule: 0.5772  
+Pneumonia: 0.5516  
+Pneumothorax: 0.6462  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.7652 AUC: 0.6036  
+
+Atelectasis: 0.6352  
+Cardiomegaly: 0.8099  
+Effusion: 0.7012  
+Infiltration: 0.6312  
+Mass: 0.4313  
+Nodule: 0.4582  
+Pneumonia: 0.5564  
+Pneumothorax: 0.6058  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 10/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 20.2667 AUC: 0.6214  
+
+Atelectasis: 0.5851  
+Cardiomegaly: 0.8166  
+Effusion: 0.6145  
+Infiltration: 0.6310  
+Mass: 0.5788  
+Nodule: 0.6133  
+Pneumonia: 0.5122  
+Pneumothorax: 0.6199  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.8212 AUC: 0.5996  
+
+Atelectasis: 0.5939  
+Cardiomegaly: 0.8333  
+Effusion: 0.6979  
+Infiltration: 0.6253  
+Mass: 0.4125  
+Nodule: 0.4639  
+Pneumonia: 0.5701  
+Pneumothorax: 0.6000  
+
+
+
+Epoch 11/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 20.0967 AUC: 0.6265  
+
+Atelectasis: 0.5466  
+Cardiomegaly: 0.7802  
+Effusion: 0.6532  
+Infiltration: 0.6351  
+Mass: 0.5819  
+Nodule: 0.6160  
+Pneumonia: 0.5544  
+Pneumothorax: 0.6445  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.0573 AUC: 0.6050  
+
+Atelectasis: 0.6728  
+Cardiomegaly: 0.8486  
+Effusion: 0.7103  
+Infiltration: 0.6268  
+Mass: 0.4703  
+Nodule: 0.4607  
+Pneumonia: 0.4502  
+Pneumothorax: 0.6005  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 12/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 19.6231 AUC: 0.6394  
+
+Atelectasis: 0.5729  
+Cardiomegaly: 0.8305  
+Effusion: 0.6535  
+Infiltration: 0.6380  
+Mass: 0.5783  
+Nodule: 0.6238  
+Pneumonia: 0.5315  
+Pneumothorax: 0.6868  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.9913 AUC: 0.6221  
+
+Atelectasis: 0.6746  
+Cardiomegaly: 0.8508  
+Effusion: 0.7257  
+Infiltration: 0.6278  
+Mass: 0.4854  
+Nodule: 0.4531  
+Pneumonia: 0.5024  
+Pneumothorax: 0.6573  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 13/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 19.3946 AUC: 0.6598  
+
+Atelectasis: 0.6118  
+Cardiomegaly: 0.8273  
+Effusion: 0.7005  
+Infiltration: 0.6325  
+Mass: 0.5613  
+Nodule: 0.6453  
+Pneumonia: 0.6024  
+Pneumothorax: 0.6973  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.0340 AUC: 0.6317  
+
+Atelectasis: 0.6431  
+Cardiomegaly: 0.8426  
+Effusion: 0.7113  
+Infiltration: 0.6257  
+Mass: 0.5004  
+Nodule: 0.4722  
+Pneumonia: 0.5845  
+Pneumothorax: 0.6736  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 14/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 18.9280 AUC: 0.6622  
+
+Atelectasis: 0.5738  
+Cardiomegaly: 0.8484  
+Effusion: 0.6966  
+Infiltration: 0.6245  
+Mass: 0.5836  
+Nodule: 0.6664  
+Pneumonia: 0.6206  
+Pneumothorax: 0.6840  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.3873 AUC: 0.6304  
+
+Atelectasis: 0.6467  
+Cardiomegaly: 0.8615  
+Effusion: 0.7332  
+Infiltration: 0.6087  
+Mass: 0.4621  
+Nodule: 0.4607  
+Pneumonia: 0.6024  
+Pneumothorax: 0.6677  
+
+
+
+Epoch 15/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 18.7206 AUC: 0.6696  
+
+Atelectasis: 0.6372  
+Cardiomegaly: 0.8870  
+Effusion: 0.6859  
+Infiltration: 0.6089  
+Mass: 0.5873  
+Nodule: 0.6578  
+Pneumonia: 0.6011  
+Pneumothorax: 0.6919  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.9200 AUC: 0.6369  
+
+Atelectasis: 0.6192  
+Cardiomegaly: 0.8875  
+Effusion: 0.7262  
+Infiltration: 0.5995  
+Mass: 0.4640  
+Nodule: 0.4708  
+Pneumonia: 0.6246  
+Pneumothorax: 0.7034  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 16/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 18.2497 AUC: 0.6899  
+
+Atelectasis: 0.6442  
+Cardiomegaly: 0.8864  
+Effusion: 0.7129  
+Infiltration: 0.6234  
+Mass: 0.6232  
+Nodule: 0.6824  
+Pneumonia: 0.6329  
+Pneumothorax: 0.7134  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.5547 AUC: 0.6385  
+
+Atelectasis: 0.6347  
+Cardiomegaly: 0.8894  
+Effusion: 0.7415  
+Infiltration: 0.6164  
+Mass: 0.4809  
+Nodule: 0.4621  
+Pneumonia: 0.6180  
+Pneumothorax: 0.6650  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 17/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 18.1401 AUC: 0.6921  
+
+Atelectasis: 0.6244  
+Cardiomegaly: 0.8901  
+Effusion: 0.7110  
+Infiltration: 0.6409  
+Mass: 0.6297  
+Nodule: 0.6866  
+Pneumonia: 0.6285  
+Pneumothorax: 0.7256  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.5418 AUC: 0.6313  
+
+Atelectasis: 0.6288  
+Cardiomegaly: 0.8569  
+Effusion: 0.7386  
+Infiltration: 0.6058  
+Mass: 0.4806  
+Nodule: 0.4587  
+Pneumonia: 0.5717  
+Pneumothorax: 0.7094  
+
+
+
+Epoch 18/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 17.8149 AUC: 0.6924  
+
+Atelectasis: 0.6360  
+Cardiomegaly: 0.8996  
+Effusion: 0.7153  
+Infiltration: 0.6398  
+Mass: 0.6422  
+Nodule: 0.6813  
+Pneumonia: 0.6087  
+Pneumothorax: 0.7161  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.3502 AUC: 0.6515  
+
+Atelectasis: 0.6598  
+Cardiomegaly: 0.8875  
+Effusion: 0.7607  
+Infiltration: 0.6142  
+Mass: 0.5633  
+Nodule: 0.4534  
+Pneumonia: 0.6047  
+Pneumothorax: 0.6682  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 19/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 17.4883 AUC: 0.7088  
+
+Atelectasis: 0.6581  
+Cardiomegaly: 0.9041  
+Effusion: 0.7459  
+Infiltration: 0.6432  
+Mass: 0.6306  
+Nodule: 0.7069  
+Pneumonia: 0.6424  
+Pneumothorax: 0.7395  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.0157 AUC: 0.6444  
+
+Atelectasis: 0.6715  
+Cardiomegaly: 0.8715  
+Effusion: 0.7570  
+Infiltration: 0.6004  
+Mass: 0.5293  
+Nodule: 0.4801  
+Pneumonia: 0.5962  
+Pneumothorax: 0.6491  
+
+
+
+Epoch 20/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 17.2067 AUC: 0.7124  
+
+Atelectasis: 0.6796  
+Cardiomegaly: 0.9120  
+Effusion: 0.7221  
+Infiltration: 0.6557  
+Mass: 0.6752  
+Nodule: 0.7066  
+Pneumonia: 0.6286  
+Pneumothorax: 0.7192  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.3758 AUC: 0.6503  
+
+Atelectasis: 0.6831  
+Cardiomegaly: 0.8967  
+Effusion: 0.7429  
+Infiltration: 0.5917  
+Mass: 0.5477  
+Nodule: 0.4907  
+Pneumonia: 0.5765  
+Pneumothorax: 0.6729  
+
+
+
+Epoch 21/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 16.9244 AUC: 0.7226  
+
+Atelectasis: 0.6778  
+Cardiomegaly: 0.9174  
+Effusion: 0.7438  
+Infiltration: 0.6589  
+Mass: 0.6719  
+Nodule: 0.7143  
+Pneumonia: 0.6308  
+Pneumothorax: 0.7657  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.8982 AUC: 0.6579  
+
+Atelectasis: 0.6716  
+Cardiomegaly: 0.8679  
+Effusion: 0.7754  
+Infiltration: 0.5984  
+Mass: 0.5019  
+Nodule: 0.4800  
+Pneumonia: 0.6295  
+Pneumothorax: 0.7388  
+
+
+Model saved to ./savedModels/net_v1_lr_1e-6_bbox_data_arg.pth
+
+Epoch 22/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 16.6021 AUC: 0.7271  
+
+Atelectasis: 0.6918  
+Cardiomegaly: 0.9287  
+Effusion: 0.7416  
+Infiltration: 0.6627  
+Mass: 0.6437  
+Nodule: 0.7282  
+Pneumonia: 0.6364  
+Pneumothorax: 0.7840  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.7699 AUC: 0.6450  
+
+Atelectasis: 0.7159  
+Cardiomegaly: 0.8508  
+Effusion: 0.7972  
+Infiltration: 0.5892  
+Mass: 0.5065  
+Nodule: 0.4638  
+Pneumonia: 0.5507  
+Pneumothorax: 0.6860  
+
+
+
+Epoch 23/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 16.7182 AUC: 0.7290  
+
+Atelectasis: 0.6804  
+Cardiomegaly: 0.8875  
+Effusion: 0.7477  
+Infiltration: 0.6704  
+Mass: 0.6911  
+Nodule: 0.7279  
+Pneumonia: 0.6688  
+Pneumothorax: 0.7582  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.4966 AUC: 0.6507  
+
+Atelectasis: 0.6727  
+Cardiomegaly: 0.8715  
+Effusion: 0.7761  
+Infiltration: 0.5865  
+Mass: 0.4685  
+Nodule: 0.4758  
+Pneumonia: 0.6555  
+Pneumothorax: 0.6993  
+
+
+
+Epoch 24/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 16.3378 AUC: 0.7393  
+
+Atelectasis: 0.7035  
+Cardiomegaly: 0.9186  
+Effusion: 0.7719  
+Infiltration: 0.6735  
+Mass: 0.6833  
+Nodule: 0.7171  
+Pneumonia: 0.6948  
+Pneumothorax: 0.7518  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.7016 AUC: 0.6399  
+
+Atelectasis: 0.6991  
+Cardiomegaly: 0.8842  
+Effusion: 0.7919  
+Infiltration: 0.5973  
+Mass: 0.4997  
+Nodule: 0.4648  
+Pneumonia: 0.5309  
+Pneumothorax: 0.6510  
+
+
+
+Epoch 25/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 16.1565 AUC: 0.7339  
+
+Atelectasis: 0.7197  
+Cardiomegaly: 0.9234  
+Effusion: 0.7742  
+Infiltration: 0.6434  
+Mass: 0.6653  
+Nodule: 0.7341  
+Pneumonia: 0.6711  
+Pneumothorax: 0.7397  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.5504 AUC: 0.6433  
+
+Atelectasis: 0.6961  
+Cardiomegaly: 0.8749  
+Effusion: 0.7810  
+Infiltration: 0.5749  
+Mass: 0.4616  
+Nodule: 0.4718  
+Pneumonia: 0.5945  
+Pneumothorax: 0.6915  
+
+
+
+Epoch 26/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 15.7500 AUC: 0.7479  
+
+Atelectasis: 0.6842  
+Cardiomegaly: 0.9311  
+Effusion: 0.7818  
+Infiltration: 0.6911  
+Mass: 0.6940  
+Nodule: 0.7275  
+Pneumonia: 0.6990  
+Pneumothorax: 0.7747  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.8386 AUC: 0.6383  
+
+Atelectasis: 0.6885  
+Cardiomegaly: 0.8510  
+Effusion: 0.7999  
+Infiltration: 0.5766  
+Mass: 0.4476  
+Nodule: 0.4525  
+Pneumonia: 0.6084  
+Pneumothorax: 0.6819  
+
+
+
+Epoch 27/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 15.3585 AUC: 0.7624  
+
+Atelectasis: 0.7115  
+Cardiomegaly: 0.9445  
+Effusion: 0.7914  
+Infiltration: 0.6887  
+Mass: 0.7050  
+Nodule: 0.7427  
+Pneumonia: 0.7125  
+Pneumothorax: 0.8025  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.7129 AUC: 0.6404  
+
+Atelectasis: 0.7057  
+Cardiomegaly: 0.8675  
+Effusion: 0.8083  
+Infiltration: 0.5930  
+Mass: 0.4553  
+Nodule: 0.4443  
+Pneumonia: 0.5649  
+Pneumothorax: 0.6842  
+
+
+
+Epoch 28/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 15.3194 AUC: 0.7549  
+
+Atelectasis: 0.7017  
+Cardiomegaly: 0.9365  
+Effusion: 0.7961  
+Infiltration: 0.6886  
+Mass: 0.7044  
+Nodule: 0.7291  
+Pneumonia: 0.6933  
+Pneumothorax: 0.7895  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 12.0986 AUC: 0.6328  
+
+Atelectasis: 0.6874  
+Cardiomegaly: 0.8700  
+Effusion: 0.8029  
+Infiltration: 0.5763  
+Mass: 0.4466  
+Nodule: 0.4426  
+Pneumonia: 0.5771  
+Pneumothorax: 0.6595  
+
+
+
+Epoch 29/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 14.9833 AUC: 0.7682  
+
+Atelectasis: 0.7191  
+Cardiomegaly: 0.9577  
+Effusion: 0.7696  
+Infiltration: 0.6901  
+Mass: 0.7284  
+Nodule: 0.7579  
+Pneumonia: 0.7211  
+Pneumothorax: 0.8017  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.6035 AUC: 0.6493  
+
+Atelectasis: 0.7250  
+Cardiomegaly: 0.8545  
+Effusion: 0.8294  
+Infiltration: 0.6073  
+Mass: 0.4500  
+Nodule: 0.4560  
+Pneumonia: 0.5788  
+Pneumothorax: 0.6935  
+
+
+
+Epoch 30/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 14.8698 AUC: 0.7695  
+
+Atelectasis: 0.7359  
+Cardiomegaly: 0.9440  
+Effusion: 0.7809  
+Infiltration: 0.6638  
+Mass: 0.7313  
+Nodule: 0.7571  
+Pneumonia: 0.7460  
+Pneumothorax: 0.7970  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.7892 AUC: 0.6514  
+
+Atelectasis: 0.7006  
+Cardiomegaly: 0.8865  
+Effusion: 0.8227  
+Infiltration: 0.5867  
+Mass: 0.4966  
+Nodule: 0.4743  
+Pneumonia: 0.5798  
+Pneumothorax: 0.6640  
+
+
+
+Epoch 31/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 14.8401 AUC: 0.7744  
+
+Atelectasis: 0.7297  
+Cardiomegaly: 0.9324  
+Effusion: 0.8059  
+Infiltration: 0.6763  
+Mass: 0.7307  
+Nodule: 0.7573  
+Pneumonia: 0.7491  
+Pneumothorax: 0.8139  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.8886 AUC: 0.6542  
+
+Atelectasis: 0.7103  
+Cardiomegaly: 0.8717  
+Effusion: 0.8176  
+Infiltration: 0.6056  
+Mass: 0.4930  
+Nodule: 0.4649  
+Pneumonia: 0.5862  
+Pneumothorax: 0.6847  
+
+
+
+Epoch 32/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 14.2002 AUC: 0.7864  
+
+Atelectasis: 0.7540  
+Cardiomegaly: 0.9590  
+Effusion: 0.7996  
+Infiltration: 0.6928  
+Mass: 0.7340  
+Nodule: 0.7663  
+Pneumonia: 0.7656  
+Pneumothorax: 0.8203  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.8115 AUC: 0.6572  
+
+Atelectasis: 0.6991  
+Cardiomegaly: 0.8958  
+Effusion: 0.8243  
+Infiltration: 0.5971  
+Mass: 0.4782  
+Nodule: 0.4608  
+Pneumonia: 0.5971  
+Pneumothorax: 0.7049  
+
+
+
+Epoch 33/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 14.2653 AUC: 0.7856  
+
+Atelectasis: 0.7394  
+Cardiomegaly: 0.9413  
+Effusion: 0.8282  
+Infiltration: 0.6927  
+Mass: 0.7374  
+Nodule: 0.7461  
+Pneumonia: 0.7631  
+Pneumothorax: 0.8365  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.4720 AUC: 0.6438  
+
+Atelectasis: 0.7015  
+Cardiomegaly: 0.8607  
+Effusion: 0.8083  
+Infiltration: 0.5845  
+Mass: 0.4744  
+Nodule: 0.4539  
+Pneumonia: 0.6187  
+Pneumothorax: 0.6486  
+
+
+
+Epoch 34/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 13.7463 AUC: 0.7934  
+
+Atelectasis: 0.7500  
+Cardiomegaly: 0.9676  
+Effusion: 0.8188  
+Infiltration: 0.7092  
+Mass: 0.7513  
+Nodule: 0.7504  
+Pneumonia: 0.7643  
+Pneumothorax: 0.8354  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.1504 AUC: 0.6465  
+
+Atelectasis: 0.7024  
+Cardiomegaly: 0.8884  
+Effusion: 0.8175  
+Infiltration: 0.5739  
+Mass: 0.4667  
+Nodule: 0.4452  
+Pneumonia: 0.5933  
+Pneumothorax: 0.6846  
+
+
+
+Epoch 35/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 13.7887 AUC: 0.7943  
+
+Atelectasis: 0.7635  
+Cardiomegaly: 0.9611  
+Effusion: 0.7991  
+Infiltration: 0.7273  
+Mass: 0.7551  
+Nodule: 0.7461  
+Pneumonia: 0.7677  
+Pneumothorax: 0.8344  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.8717 AUC: 0.6561  
+
+Atelectasis: 0.6975  
+Cardiomegaly: 0.8874  
+Effusion: 0.8244  
+Infiltration: 0.5896  
+Mass: 0.4748  
+Nodule: 0.4733  
+Pneumonia: 0.6239  
+Pneumothorax: 0.6777  
+
+
+
+Epoch 36/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 13.5284 AUC: 0.8008  
+
+Atelectasis: 0.7654  
+Cardiomegaly: 0.9721  
+Effusion: 0.7926  
+Infiltration: 0.7312  
+Mass: 0.7723  
+Nodule: 0.7762  
+Pneumonia: 0.7700  
+Pneumothorax: 0.8270  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.2602 AUC: 0.6497  
+
+Atelectasis: 0.7083  
+Cardiomegaly: 0.8635  
+Effusion: 0.8198  
+Infiltration: 0.5833  
+Mass: 0.4752  
+Nodule: 0.4560  
+Pneumonia: 0.5973  
+Pneumothorax: 0.6942  
+
+
+
+Epoch 37/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 13.3628 AUC: 0.8094  
+
+Atelectasis: 0.7655  
+Cardiomegaly: 0.9623  
+Effusion: 0.8114  
+Infiltration: 0.7169  
+Mass: 0.7612  
+Nodule: 0.7955  
+Pneumonia: 0.8076  
+Pneumothorax: 0.8550  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.5220 AUC: 0.6506  
+
+Atelectasis: 0.7119  
+Cardiomegaly: 0.8668  
+Effusion: 0.8230  
+Infiltration: 0.5949  
+Mass: 0.5006  
+Nodule: 0.4480  
+Pneumonia: 0.5769  
+Pneumothorax: 0.6829  
+
+
+
+Epoch 38/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 12.9326 AUC: 0.8165  
+
+Atelectasis: 0.7784  
+Cardiomegaly: 0.9673  
+Effusion: 0.8265  
+Infiltration: 0.7089  
+Mass: 0.7738  
+Nodule: 0.8109  
+Pneumonia: 0.8116  
+Pneumothorax: 0.8548  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.7126 AUC: 0.6573  
+
+Atelectasis: 0.7259  
+Cardiomegaly: 0.8721  
+Effusion: 0.8231  
+Infiltration: 0.5712  
+Mass: 0.5273  
+Nodule: 0.4817  
+Pneumonia: 0.5778  
+Pneumothorax: 0.6792  
+
+
+
+Epoch 39/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 12.8085 AUC: 0.8249  
+
+Atelectasis: 0.7896  
+Cardiomegaly: 0.9786  
+Effusion: 0.8306  
+Infiltration: 0.7454  
+Mass: 0.7770  
+Nodule: 0.7872  
+Pneumonia: 0.8182  
+Pneumothorax: 0.8727  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.7994 AUC: 0.6492  
+
+Atelectasis: 0.7059  
+Cardiomegaly: 0.8917  
+Effusion: 0.8299  
+Infiltration: 0.5809  
+Mass: 0.4819  
+Nodule: 0.4669  
+Pneumonia: 0.5447  
+Pneumothorax: 0.6922  
+
+
+
+Epoch 40/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 12.7257 AUC: 0.8252  
+
+Atelectasis: 0.7679  
+Cardiomegaly: 0.9708  
+Effusion: 0.8327  
+Infiltration: 0.7611  
+Mass: 0.7735  
+Nodule: 0.7968  
+Pneumonia: 0.8328  
+Pneumothorax: 0.8662  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.2131 AUC: 0.6470  
+
+Atelectasis: 0.6779  
+Cardiomegaly: 0.8590  
+Effusion: 0.8041  
+Infiltration: 0.5752  
+Mass: 0.5070  
+Nodule: 0.4811  
+Pneumonia: 0.6012  
+Pneumothorax: 0.6701  
+
+
+
+Epoch 41/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 12.8389 AUC: 0.8238  
+
+Atelectasis: 0.7964  
+Cardiomegaly: 0.9640  
+Effusion: 0.8122  
+Infiltration: 0.7668  
+Mass: 0.7732  
+Nodule: 0.7961  
+Pneumonia: 0.8291  
+Pneumothorax: 0.8522  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.7625 AUC: 0.6538  
+
+Atelectasis: 0.6927  
+Cardiomegaly: 0.8627  
+Effusion: 0.8136  
+Infiltration: 0.5770  
+Mass: 0.5441  
+Nodule: 0.4749  
+Pneumonia: 0.5564  
+Pneumothorax: 0.7087  
+
+
+
+Epoch 42/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 12.1509 AUC: 0.8360  
+
+Atelectasis: 0.7961  
+Cardiomegaly: 0.9729  
+Effusion: 0.8389  
+Infiltration: 0.7546  
+Mass: 0.7899  
+Nodule: 0.7911  
+Pneumonia: 0.8576  
+Pneumothorax: 0.8871  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.1855 AUC: 0.6466  
+
+Atelectasis: 0.6992  
+Cardiomegaly: 0.8772  
+Effusion: 0.8035  
+Infiltration: 0.5882  
+Mass: 0.5064  
+Nodule: 0.4642  
+Pneumonia: 0.5675  
+Pneumothorax: 0.6670  
+
+
+
+Epoch 43/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 12.0682 AUC: 0.8346  
+
+Atelectasis: 0.7806  
+Cardiomegaly: 0.9814  
+Effusion: 0.8444  
+Infiltration: 0.7482  
+Mass: 0.8127  
+Nodule: 0.8157  
+Pneumonia: 0.8418  
+Pneumothorax: 0.8521  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.3219 AUC: 0.6475  
+
+Atelectasis: 0.6809  
+Cardiomegaly: 0.8363  
+Effusion: 0.8346  
+Infiltration: 0.5947  
+Mass: 0.5056  
+Nodule: 0.4860  
+Pneumonia: 0.5821  
+Pneumothorax: 0.6599  
+
+
+
+Epoch 44/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 11.7533 AUC: 0.8436  
+
+Atelectasis: 0.7962  
+Cardiomegaly: 0.9853  
+Effusion: 0.8303  
+Infiltration: 0.7561  
+Mass: 0.8041  
+Nodule: 0.8271  
+Pneumonia: 0.8735  
+Pneumothorax: 0.8764  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.7280 AUC: 0.6470  
+
+Atelectasis: 0.6764  
+Cardiomegaly: 0.8804  
+Effusion: 0.8229  
+Infiltration: 0.5518  
+Mass: 0.5028  
+Nodule: 0.4991  
+Pneumonia: 0.5771  
+Pneumothorax: 0.6659  
+
+
+
+Epoch 45/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 11.7080 AUC: 0.8450  
+
+Atelectasis: 0.8025  
+Cardiomegaly: 0.9832  
+Effusion: 0.8542  
+Infiltration: 0.7445  
+Mass: 0.7994  
+Nodule: 0.8220  
+Pneumonia: 0.8691  
+Pneumothorax: 0.8847  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.2072 AUC: 0.6482  
+
+Atelectasis: 0.7019  
+Cardiomegaly: 0.8637  
+Effusion: 0.8372  
+Infiltration: 0.5853  
+Mass: 0.5052  
+Nodule: 0.5000  
+Pneumonia: 0.5671  
+Pneumothorax: 0.6256  
+
+
+
+Epoch 46/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 11.5844 AUC: 0.8492  
+
+Atelectasis: 0.7995  
+Cardiomegaly: 0.9826  
+Effusion: 0.8450  
+Infiltration: 0.7761  
+Mass: 0.8123  
+Nodule: 0.8272  
+Pneumonia: 0.8689  
+Pneumothorax: 0.8820  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.0372 AUC: 0.6483  
+
+Atelectasis: 0.7001  
+Cardiomegaly: 0.8609  
+Effusion: 0.8399  
+Infiltration: 0.5809  
+Mass: 0.5205  
+Nodule: 0.5053  
+Pneumonia: 0.4980  
+Pneumothorax: 0.6809  
+
+
+
+Epoch 47/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 11.6129 AUC: 0.8472  
+
+Atelectasis: 0.7932  
+Cardiomegaly: 0.9819  
+Effusion: 0.8376  
+Infiltration: 0.7778  
+Mass: 0.8023  
+Nodule: 0.8318  
+Pneumonia: 0.8503  
+Pneumothorax: 0.9024  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.0733 AUC: 0.6482  
+
+Atelectasis: 0.6809  
+Cardiomegaly: 0.8907  
+Effusion: 0.8174  
+Infiltration: 0.5854  
+Mass: 0.4987  
+Nodule: 0.4703  
+Pneumonia: 0.5653  
+Pneumothorax: 0.6769  
+
+
+
+Epoch 48/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 11.2483 AUC: 0.8541  
+
+Atelectasis: 0.8222  
+Cardiomegaly: 0.9871  
+Effusion: 0.8576  
+Infiltration: 0.7579  
+Mass: 0.8177  
+Nodule: 0.8211  
+Pneumonia: 0.8643  
+Pneumothorax: 0.9052  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 11.2195 AUC: 0.6459  
+
+Atelectasis: 0.6969  
+Cardiomegaly: 0.8479  
+Effusion: 0.8295  
+Infiltration: 0.5758  
+Mass: 0.5059  
+Nodule: 0.5109  
+Pneumonia: 0.5241  
+Pneumothorax: 0.6760  
+
+
+
+Epoch 49/49
+----------
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+train 0.00%train 5.08%train 10.15%train 15.23%train 20.30%train 25.38%train 30.46%train 35.53%train 40.61%train 45.69%train 50.76%train 55.84%train 60.91%train 65.99%train 71.07%train 76.14%train 81.22%train 86.29%train 91.37%train 96.45%train Loss: 10.9904 AUC: 0.8594  
+
+Atelectasis: 0.8236  
+Cardiomegaly: 0.9829  
+Effusion: 0.8545  
+Infiltration: 0.7694  
+Mass: 0.8207  
+Nodule: 0.8425  
+Pneumonia: 0.8800  
+Pneumothorax: 0.9019  
+
+
+/home/aryana.scee.iitmandi/.conda/envs/myenv/lib/python3.10/site-packages/torch/nn/functional.py:3769: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+val 0.00%val 4.61%val 9.22%val 13.82%val 18.43%val 23.04%val 27.65%val 32.26%val 36.87%val 41.47%val 46.08%val 50.69%val 55.30%val 59.91%val 64.52%val 69.12%val 73.73%val 78.34%val 82.95%val 87.56%val 92.17%val 96.77%val Loss: 10.6242 AUC: 0.6498  
+
+Atelectasis: 0.6899  
+Cardiomegaly: 0.8577  
+Effusion: 0.8322  
+Infiltration: 0.5788  
+Mass: 0.5066  
+Nodule: 0.5028  
+Pneumonia: 0.5636  
+Pneumothorax: 0.6668  
+
+
+
+Training complete in 531m 56s
+Best val AUC: 0.657935
+
+Atelectasis: 0.6716 
+Cardiomegaly: 0.8679 
+Effusion: 0.7754 
+Infiltration: 0.5984 
+Mass: 0.5019 
+Nodule: 0.4800 
+Pneumonia: 0.6295 
+Pneumothorax: 0.7388 
