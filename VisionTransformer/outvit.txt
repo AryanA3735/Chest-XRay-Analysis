@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/aryana.scee.iitmandi/vit/train.py", line 3, in <module>
+    from model import Model
+  File "/home/aryana.scee.iitmandi/vit/model.py", line 6, in <module>
+    from transformers import ViTModel
+ModuleNotFoundError: No module named 'transformers'
